@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Puma - Paralelo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="apresen m-0 section-tittle">PUMA</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link active" href="#inicio">
+                            <i class="bi bi-clipboard-pulse"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#desafios">
+                            <i class="bi bi-clipboard-pulse"></i>
+                            Desafios
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#produtos">
+                            <i class="bi bi-cart-plus"></i>
+                            Nossos produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#fale-conosco">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="inicio">
+            <div class="carousel slide overflow-auto" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="w-100 h-100" src="./imagens/Inicio/6999.webp">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100 h-100" src="./imagens/Inicio/post_17185.jpeg">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100 h-100" src="./imagens/Inicio/imagen1_resized (1).jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="desafios" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Para todos os desafios</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="./imagens/Desafios/fut1.jpg" alt="">
+                        <h3>Futebol</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio facere perferendis tempore quam. Provident, cupiditate ea. Libero, eum deserunt?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="./imagens/Desafios/run.jpg" alt="">
+                        <h3>Corrida</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio facere perferendis tempore quam. Provident, cupiditate ea. Libero, eum deserunt?</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="./imagens/Desafios/run.jpg" alt="">
+                        <h3>Lifestyle</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio facere perferendis tempore quam. Provident, cupiditate ea. Libero, eum deserunt?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Nossos produtos</h2>
+                </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-colum nav-opcoes">
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#Lancamentos" class="fw-bold text-star nav-link active">
+                            <i class="bi bi-cart-plus"></i>
+                            Lançamentos
+                        </button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#mais-vendidos" class="fw-bold text-star nav-link">
+                            <i class="bi bi-trophy-fill"></i>
+                            Mais vendidos
+                        </button>
+                        <button type="button" data-bs-toggle="tab" data-bs-target="#Promocoes" class="fw-bold text-star nav-link">
+                            <i class="bi bi-cash-coin"></i>
+                            Promoção
+                        </button>
+                    </nav>
+                </aside>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="Lancamentos">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/Produtos/Lançamentos/imagen1.webp" alt="">
+                                    <h5 class="fw-bold mt-2">TÊNIS PUMA X RICK AND MORTY MB.02 BASKETBALL</h5>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/Produtos/Lançamentos/imagen2.webp" alt="">
+                                    <h5 class="fw-bold mt-2">TÊNIS DE BASQUETE MB.02</h5>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/Produtos/Lançamentos/imagen3.webp" alt="">
+                                    <h5 class="fw-bold mt-2">MOLETOM PUMA X RICK AND MORTY FULL-ZIP BASKETBALL MASCULINO</h5>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/Produtos/Lançamentos/imagen4.webp" alt="">
+                                    <h5 class="fw-bold mt-2">TÊNIS DE BASQUETE MB.02</h5>
+                                </div>
+                                <div class="col-md-3">
+                                    <img class="d-block w-100" src="./imagens/Produtos/Lançamentos/imagen5.webp" alt="">
+                                    <h5 class="fw-bold mt-2">TÊNIS PACER FUTURE PUMA X SPONGEBOB JUVENIL</h5>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="tab-pane" id="mais-vendidos">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Mais vendidos/img1.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS SUEDE CLASSIC XXI</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Mais vendidos/img2.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS PUMA X RICK AND MORTY MB.02 BASKETBALL</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Mais vendidos/img3.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS CARINA FEMININO</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Mais vendidos/img4.webp" alt="">
+                                <h5 class="fw-bold">GARRAFA TRAINING STAINLESS STEEL</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Mais vendidos/img5.webp" alt="">
+                                <h5 class="fw-bold">MOCHILA CORE BASE</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Mais vendidos/img6.webp" alt="">
+                                <h5 class="fw-bold">BONÉ ESSENTIALS</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="Promocoes">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Promoções/im1.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS CELL VIVE RUNNING</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Promoções/im2.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS FAST-TRAC NITRO RUNNING FEMININO</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Promoções/im3.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS INCINERATE RUNNING</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Promoções/im4.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS MAYZE FEMININO</h5>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="d-block w-100" src="./imagens/Produtos/Promoções/im5.webp" alt="">
+                                <h5 class="fw-bold">TÊNIS SLIPSTREAM LTH</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Fale conosco</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="nome">Seu nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="email">Seu e-mail</label>
+                                <input type="email" name="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="telefone">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold" for="nome">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" required name="mensagem" ></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="fs-4 fw-bold">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>Rua Teste nº 1000, Bairro Jardim São Paulo - São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_PT.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#telefone').mask('(00) 00000-0000')
+
+            $('form').validate({
+                rules: {
+                    nome:{
+                        required:true
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    },
+                    mensagem:{
+                        required:true
+                    },
+                }
+            })
+        });
+    </script>
+</body>
+</html>
